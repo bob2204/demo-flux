@@ -17,3 +17,9 @@ spec:
           image: nginx:latest
           ports:
             - containerPort: 80
+          env:
+            - name: SECRET
+              valueFrom:
+                secretkeyRef:
+                  name: demo-flux
+                  key: SECRET

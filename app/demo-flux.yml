@@ -20,6 +20,6 @@ spec:
           env:
             - name: SECRET
               valueFrom:
-                secretkeyRef:
+                secretKeyRef:
                   name: demo-flux
                   key: SECRET

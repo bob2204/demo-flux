@@ -23,3 +23,5 @@ spec:
                 secretKeyRef:
                   name: demo-flux
                   key: SECRET
+            - name: STAGE
+              value: K8S

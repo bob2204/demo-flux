@@ -18,10 +18,5 @@ spec:
           ports:
             - containerPort: 80
           env:
-            - name: SECRET
-              valueFrom:
-                secretKeyRef:
-                  name: demo-flux
-                  key: SECRET
             - name: STAGE
               value: K8S
